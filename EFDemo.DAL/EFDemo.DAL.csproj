@@ -48,15 +48,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DemoDbContext.cs" />
+    <Compile Include="Initializer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Interceptor\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\EFDemo.Models\EFDemo.Models.csproj">
       <Project>{35A132B9-4139-424F-8B91-EF5C258C59E7}</Project>

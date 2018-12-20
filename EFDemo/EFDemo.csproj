@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A1A64F22-726E-452C-93D0-7DFFFDF5C2F1}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>EFDemo.Console</RootNamespace>
-    <AssemblyName>EFDemo.Console</AssemblyName>
+    <RootNamespace>EFDemo</RootNamespace>
+    <AssemblyName>EFDemo</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -55,6 +55,16 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EFDemo.DAL\EFDemo.DAL.csproj">
+      <Project>{9DAF44B6-8975-44C8-B8F4-67552E814D0C}</Project>
+      <Name>EFDemo.DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EFDemo.Models\EFDemo.Models.csproj">
+      <Project>{35A132B9-4139-424F-8B91-EF5C258C59E7}</Project>
+      <Name>EFDemo.Models</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace EFDemo.Models.Entities
 {
@@ -8,6 +9,11 @@ namespace EFDemo.Models.Entities
 
         public virtual Mentor Mentor { get; set; }
 
-        public virtual ICollection<Task> Tasks { get; set; }
+        public virtual ICollection<JournalRecord> Records { get; set; }
+
+        public override string ToString()
+        {
+            return base.ToString() + $"    Mentor: {Mentor.Name}    Tasks finished: {Records.Count(r => r.IsDone)}";
+        }
     }
 }

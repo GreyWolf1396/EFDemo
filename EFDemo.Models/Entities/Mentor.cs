@@ -7,5 +7,10 @@ namespace EFDemo.Models.Entities
         public string Title { get; set; }
 
         public virtual ICollection<Student> Students { get; set; }
+
+        public override string ToString()
+        {
+            return base.ToString() +$"      Students: {Students.Count}";
+        }
     }
 }
