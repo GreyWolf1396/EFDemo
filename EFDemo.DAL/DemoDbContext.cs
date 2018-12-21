@@ -20,8 +20,16 @@ namespace EFDemo.DAL
         {
             base.OnModelCreating(modelBuilder);
 
-            modelBuilder.Entity<Student>().ToTable("Student");
-            modelBuilder.Entity<Mentor>().ToTable("Mentor");
+            modelBuilder.Entity<Student>().Map(m =>
+            {
+                m.MapInheritedProperties();
+                m.ToTable("Student");
+            });
+            modelBuilder.Entity<Mentor>().Map(m =>
+            {
+                m.MapInheritedProperties();
+                m.ToTable("Mentor");
+            });
         }
     }
 }
