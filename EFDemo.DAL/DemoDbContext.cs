@@ -15,5 +15,13 @@ namespace EFDemo.DAL
         public DbSet<Task> Tasks { get; set; }
 
         public DbSet<JournalRecord> Records { get; set; }
+
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Student>().ToTable("Student");
+            modelBuilder.Entity<Mentor>().ToTable("Mentor");
+        }
     }
 }
