@@ -1,8 +1,10 @@
 ﻿using System.Data.Entity;
+using EFDemo.DAL.Interceptor;
 using EFDemo.Models.Entities;
 
 namespace EFDemo.DAL
 {
+    [DbConfigurationType(typeof(EfDemoDonfiguration))]
     public class DemoDbContext : DbContext
     {
         public DemoDbContext() : base("DemoConnection")

@@ -49,6 +49,8 @@
   <ItemGroup>
     <Compile Include="DemoDbContext.cs" />
     <Compile Include="Initializer.cs" />
+    <Compile Include="Interceptor\CommandInterceptor.cs" />
+    <Compile Include="Interceptor\EfDemoDonfiguration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
