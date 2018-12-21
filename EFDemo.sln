@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDemo.Models", "EFDemo.Mod
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDemo.DAL", "EFDemo.DAL\EFDemo.DAL.csproj", "{9DAF44B6-8975-44C8-B8F4-67552E814D0C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Migrations", "Migrations", "{4916112A-AE74-4380-B2D6-9CADD1984451}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDemo.Migrations", "EfDemoMigration\EFDemo.Migrations.csproj", "{B6497685-E6AF-4EF1-B80B-66903B546758}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,9 +31,16 @@ Global
 		{9DAF44B6-8975-44C8-B8F4-67552E814D0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DAF44B6-8975-44C8-B8F4-67552E814D0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DAF44B6-8975-44C8-B8F4-67552E814D0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6497685-E6AF-4EF1-B80B-66903B546758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6497685-E6AF-4EF1-B80B-66903B546758}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6497685-E6AF-4EF1-B80B-66903B546758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6497685-E6AF-4EF1-B80B-66903B546758}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B6497685-E6AF-4EF1-B80B-66903B546758} = {4916112A-AE74-4380-B2D6-9CADD1984451}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {17E55969-B047-4D5B-8180-CF20EF289BE7}
